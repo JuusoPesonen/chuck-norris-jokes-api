@@ -43,6 +43,7 @@ img {
 
 .card {
   border: 1px solid #ccc;
+  align-items: center;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
@@ -94,6 +95,7 @@ input[type="text"] {
 }
 
 .btn-2 {
+  justify-self: center;
   padding: 10px;
   margin: 5px;
   border: none;
@@ -116,4 +118,5 @@ input[type="text"] {
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
+  font-style: italic;
 }
