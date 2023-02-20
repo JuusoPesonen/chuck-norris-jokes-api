@@ -66,13 +66,10 @@ function App() {
           <h1 className="title">Chuck Norris Jokes API</h1>
           <img src={Chuck} alt="Chuck Norris" />
         </div>
-        <button>
-
-        </button>
         <div className="col-6">
           <div className="card">
             <div className="card-header">
-              Search for a word
+              Search with a word
             </div>
             <div className="search-wrapper">
               <input type="text"
@@ -82,7 +79,7 @@ function App() {
               />
               <button className="search-btn" onClick={handleSearch}>Search</button>
             </div>
-            <button className="btn-2" onClick={getRandomJoke}>Random Joke</button>
+            <button className="btn-wrapper btn-2" onClick={getRandomJoke}>Random Joke</button>
           </div>
           <div className="btn-wrapper btn-warning">
             {buttons.map((item) => {
@@ -98,7 +95,7 @@ function App() {
           <div>
           </div>
           <div className="joke-wrapper">
-            {joke.value}
+            <p>"{joke.value}"</p>
           </div>
         </div>
       </div>
