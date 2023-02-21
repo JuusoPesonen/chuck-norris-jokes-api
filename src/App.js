@@ -25,7 +25,7 @@ function App() {
     fetchData();
 
   }, []);
-
+  // Search input function handle word search
   const handleSearch = async () => {
     let URLI = URL + 'search?query=' + searchTerm;
     try {
@@ -36,7 +36,7 @@ function App() {
       console.log("Error: Cannot found, try again.", error);
     }
   }
-
+  //Buttons function handle search by category
   const getJoke = async (category) => {
     let URLI = URL + 'random?category=' + category;
     try {
@@ -47,7 +47,7 @@ function App() {
       console.log("Error: Cannot find a word", error);
     }
   }
-
+  //Button function handle random joke search
   const getRandomJoke = async () => {
     let URLI = URL + 'random';
     try {
