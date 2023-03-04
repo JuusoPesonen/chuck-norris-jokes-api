@@ -33,7 +33,7 @@ function App() {
       const json = await response.json();
       setJoke(json.result[0]);
     } catch (error) {
-      console.log("Error: Cannot found, try again.", error);
+      console.log("Error: Cannot found a word, try again.", error);
     }
   }
   //Buttons function handle search by category
@@ -44,7 +44,7 @@ function App() {
       const json = await response.json();
       setJoke(json);
     } catch (error) {
-      console.log("Error: Cannot find a word", error);
+      console.log("Error: Cannot find category, try again.", error);
     }
   }
   //Button function handle random joke search
@@ -55,7 +55,7 @@ function App() {
       const json = await response.json();
       setJoke(json);
     } catch (error) {
-      console.log("error", error);
+      console.log("Error: Cannot find a joke, try again.", error);
     }
   }
 
